@@ -12,7 +12,7 @@ const Header = () => {
 				to="/"
 				className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
 			>
-				<span className="px-2 py-1 e">e -</span>
+				<span className="px-2 py-1 e">E -</span>
 				Blog
 			</Link>
 			<form>
@@ -35,7 +35,9 @@ const Header = () => {
 					<FaMoon />
 				</Button>
 				<Link to="/sign-in">
-					<Button gradientDuoTone="purpleToBlue">Sign In</Button>
+					<Button gradientDuoTone="purpleToBlue" outline>
+						Sign In
+					</Button>
 				</Link>
 				<Navbar.Toggle />
 			</div>
