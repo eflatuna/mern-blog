@@ -13,7 +13,7 @@ export const signup = async (req, res, next) => {
 		// Mevcut kullanıcı kontrolü
 		const existingUser = await User.findOne({ email });
 		if (existingUser) {
-			return res.status(400).json({ message: "User already exists!" });
+			next(errorHandler, (400, "User already exists!"));
 		}
 
 		// Şifreyi hash'leme
